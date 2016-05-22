@@ -1,0 +1,19 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "www",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "redirects": {
+    "source": "/api/googleplaces/*",
+    "destination": "https://www.google.ca",
+    "type": 301
+  }
+}

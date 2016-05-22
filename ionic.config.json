@@ -1,0 +1,13 @@
+{
+  "name": "actively",
+  "app_id": "",
+  "v2": true,
+  "typescript": true, 
+  "proxies": [
+    {
+      "path": "/api/googleplaces",
+      "proxyUrl": "https://maps.googleapis.com/maps/api/place/nearbysearch/"
+    }
+  ]
+}
+

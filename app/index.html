@@ -1,0 +1,25 @@
+<ion-navbar *navbar>  
+    <ion-title>
+        Google Places
+    </ion-title>
+</ion-navbar>
+
+<ion-content class="index">  
+    <ion-list inset>
+        <ion-item>
+            <ion-label>Query</ion-label>
+            <ion-input [(ngModel)]="query" type="text"></ion-input>
+        </ion-item>
+    </ion-list>
+    <div padding>
+        <button (click)="getPlaces()">Search</button>
+    </div>
+    <ion-card *ngFor="#place of foundPlaces">
+        <ion-label>
+            {{ place.name }}
+        </ion-label>
+        <ion-label>
+            {{ place.vicinity}}
+        </ion-label>
+    </ion-card>
+</ion-content>  
