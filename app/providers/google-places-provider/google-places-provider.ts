@@ -15,8 +15,8 @@ export class GooglePlacesProvider {
   constructor(public http: Http) {}
 
   getPlaces(query) {
-    //let places = this.http.get(`/api/googleplaces/json?location=53.5444,-113.4909&radius=5000&name=${query}&key=AIzaSyCbvSt4V-6Ti2IXARiIVoXdiwKzFde82rE`);
-    let places = this.http.get(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=53.5444,-113.4909&radius=5000&name=${query}&key=AIzaSyCbvSt4V-6Ti2IXARiIVoXdiwKzFde82rE`);
+    let places = this.http.get(`/api/googleplaces/json?location=53.5444,-113.4909&radius=5000&name=${query}&key=AIzaSyCbvSt4V-6Ti2IXARiIVoXdiwKzFde82rE`);
+    //let places = this.http.get(`https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=53.5444,-113.4909&radius=5000&name=${query}&key=AIzaSyCbvSt4V-6Ti2IXARiIVoXdiwKzFde82rE`);
     return places;
   }
   

@@ -1,0 +1,7 @@
+{
+    "name": "actively app testing",
+    "description": "testing actively on heroku",
+    "repository": "https://github.com/mikeymike729/activelyapp",
+    "logo": "http://",
+    "keywords": ["ionic", "mood", "actively"]
+}
